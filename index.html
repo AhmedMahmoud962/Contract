@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" href="contract.css">
+  <title>Contract </title>
+
+</head>
+
+<body onLoad="printDiv()">
+  <div class="receipt-content page" size="A4">
+    <!-- <div style="display: flex;justify-content: flex-end;">
+      <img src="{{ asset('dashboard') }}/assets/img/horizon-png.png" alt="" style="width: 210px;height:120px;  border-radius: 15px; display:flex;"></a>
+    </div> -->
+    <div style="display: flex;justify-content: space-between;flex-direction: row;margin: 10px 0;align-items: center;">
+      <section>
+        <div style="margin: 6px 0;"><span style="font-weight: bold;">Landlord</span>
+          <span style="padding: 0 10px; font-weight: bold">:</span> <span>Ahmed Mahmoud</span>
+        </div>
+        <div><span style="font-weight: bold;">TRN</span>
+          <span style="padding-left:20px; padding-right:30px; font-weight: bold">:</span> <span>1234</span>
+        </div>
+      </section>
+      <section>
+        <img src="imgs/horizon.png" alt="" style="width: 220px;height:180px;  border-radius: 15px; display:flex;"></a>
+      </section>
+    </div>
+    <h3 style="text-align: center;margin-bottom: 15px;padding: 5px 0;">TENANCY CONTRACT / RECEIPT</h3>
+    <!-- info data -->
+    <table>
+      <tr>
+        <td style="width: 55%; border-right: none;font-size: 16px"><span style="font-weight: bold;">Doc No</span>
+          <span style="padding: 0 10px; font-weight: bold">:</span> <span>TC01</span>
+        </td>
+        <td style="border-left: none;"><span style="font-weight: bold;">Date</span>
+          <span style="padding: 0 10px; font-weight: bold">:</span> <span>15 Feb 2024</span>
+        </td>
+      </tr>
+      <tr>
+        <td style="width: 55%; border-right: none;font-size: 16px"><span style="font-weight: bold;">Property
+            Name</span>
+          <span style="padding: 0 10px; font-weight: bold">:</span> <span>test</span>
+        </td>
+        <td style=" border-left: none;"><span style="font-weight: bold;">Status</span>
+          <span style="padding: 0 10px; font-weight: bold">:</span> <span>new</span>
+        </td>
+      </tr>
+      <tr>
+        <td style="width: 55%; border-right: none;font-size: 16px"><span style="font-weight: bold;">Unit No</span>
+          <span style="padding: 0 10px; font-weight: bold">:</span> <span>U1</span>
+        </td>
+        <td style="border-left: none;"><span style="font-weight: bold;">Floor</span>
+          <span style="padding: 0 10px; font-weight: bold">:</span> <span>10</span>
+        </td>
+      </tr>
+      <tr>
+        <td style="width: 55%; border-right: none;font-size: 16px"><span style="font-weight: bold;">Unit
+            Description</span>
+          <span style="padding: 0 10px; font-weight: bold">:</span> <span>151</span>
+        </td>
+
+        <td style="border-left: none;"><span style="font-weight: bold;">Nationality</span>
+          <span style="padding: 0 10px; font-weight: bold">:</span> <span>Egyptain</span>
+        </td>
+      </tr>
+      <tr>
+        <td style="width: 55%; border-right: none;font-size: 16px"><span style="font-weight: bold;">Tenant Name</span>
+          <span style="padding: 0 10px;">:</span> <span>Ahmed Mahmoud</span>
+        </td>
+        <td style="border-left: none;"><span style="font-weight: bold;">Email</span>
+          <span style="padding: 0 10px; font-weight: bold">:</span> <span>ahmedmahmoud6921@gmail.com</span>
+        </td>
+      </tr>
+      <tr>
+        <td style="width: 55%; border-right: none;font-size: 16px"><span style="font-weight: bold;">Rent Amount</span>
+          <span style="padding: 0 10px; font-weight: bold">:</span> <span>2549</span>
+        </td>
+        <td style="border-left: none;"><span style="font-weight: bold;">Phone </span>
+          <span style="padding: 0 10px; font-weight: bold">:</span> <span>01033993202</span>
+        </td>
+      </tr>
+      <tr>
+        <td style="width: 55%; border-right: none;font-size: 16px"><span
+            style="font-weight: bold;color: rgb(225, 5, 5);">Contract Start
+            Date</span>
+          <span style="padding: 0 10px; font-weight: bold">:</span> <span>15 Feb 2024</span>
+        </td>
+        <td style="border-left: none;"><span style="font-weight: bold; color: rgb(225, 5, 5);">End Date</span>
+          <span style="padding: 0 10px; font-weight: bold">:</span> <span>28 Feb 2025</span>
+        </td>
+      </tr>
+    </table>
+    <div style="margin:25px 0;">
+      <h4 style="text-align: left;margin: 0;padding: 12px 0;">Rent Detalis</h4>
+      <!-- table 2 -->
+      <table style="text-align: center;">
+        <thead>
+          <tr class="bg-blue" style="text-align: center;">
+            <th style="text-align: center;">S NO</th>
+            <th style="text-align: center;">Particulars</th>
+            <th style="text-align: center;">Amount</th>
+            <th style="text-align: center;">VAT %</th>
+            <th style="text-align: center;">VatAmount</th>
+            <th style="text-align: center;">Amount With</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td width="10%">1</td>
+            <td style="text-align: left;">rent</td>
+            <td width="10%" id="amount">2351</td>
+            <td width="10%" id="vat">0%</td>
+            <td width="15%" class="fw-bold" id="vat_amount">0</td>
+            <td width="15%" class="fw-bold" style="text-align: right;" id="total_amount">2351</td>
+          </tr>
+          <tr>
+            <td width="10%">2</td>
+            <td style="text-align: left;">rent</td>
+            <td width="10%" id="amount">2351</td>
+            <td width="10%" id="vat">0%</td>
+            <td width="15%" class="fw-bold" id="vat_amount">0</td>
+            <td width="15%" class="fw-bold" style="text-align: right;" id="total_amount">2351</td>
+          </tr>
+          <tr>
+            <td colspan="2" class="total-heading" style="font-weight: bold;">TOTAL</td>
+            <td colspan="1" class="total-heading" style="font-weight: bold;">4702</td>
+            <td colspan="1" class="total-heading" style="font-weight: bold;"></td>
+            <td colspan="1" class="total-heading" style="font-weight: bold;">0</td>
+            <td colspan="1" class="total-heading" style="font-weight: bold;text-align: right;">5000</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div style="margin:25px 0;">
+      <h4 style="text-align: left;margin: 0;padding: 12px 0;">Payment Detalis</h4>
+      <!-- table 3 -->
+      <table style="text-align: center;">
+        <thead>
+          <tr class="bg-blue" style="text-align: center;">
+            <th style="text-align: center;">S NO</th>
+            <th style="text-align: center;" id="head_cheque_number">Chq-No</th>
+            <th style="text-align: center;" id="head_invoice_number">Inv-No</th>
+            <th style="text-align: center;">Che Date</th>
+            <th style="text-align: center;" id="head_payee_bank">Payee Bank</th>
+            <th style="text-align: center;">Description</th>
+            <th style="text-align: center;">Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td width="10%">1</td>
+            <td width="10%" id="cheque_number" style="text-align: center">123321</td>
+            <td width="10%" id="invoice_number" style="text-align: center"></td>
+            <td width="15%">27 Feb 2024</td>
+            <td width="15%" class="fw-bold" id="payee_bank">Bank</td>
+            <td style="text-align: left;">1</td>
+            <td width="15%" class="fw-bold" style="text-align: right;">4702</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="print" style="padding:20px 0;">
+      <a href="#" id="print">print</a>
+    </div>
+  </div>
+
+
+  <script>
+    document.getElementById("print").addEventListener("click", function () {
+      // Hide the print button
+      this.style.display = 'none';
+      //seeting the print window
+      window.print([
+        {
+          //paper size
+          paperSize: 'A4',
+          //paper orientation
+          paperOrientation: 'landscape',
+          //paper margins
+          paperMargins: '0cm',
+          //paper header
+          paperHeader: '0cm',
+          //paper footer
+          paperFooter: '0cm'
+        }
+      ]);
+    });
+  </script>
+</body>
+
+</html>
